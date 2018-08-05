@@ -10,20 +10,45 @@ body {
     padding: 10px;
 }
 
-#top_content {
-    margin: 40px;
+/* for Galaxy S5 */
+@media(max-width: 530px) {
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #result_content {
+        margin: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .result {
+        margin: 10px;
+    }
 }
 
-#result_content {
-    margin: 40px;
+/* for desktop */
+@media(min-width: 1030px){
 
-    display: grid;
-    grid-template-columns: repeat( 4, auto );
-    grid-gap: 40px;
-    justify-items: stretch;
-}
+    #top_content {
+        margin: 40px;
+    }
 
-#result_content img {
-    float: left;
-    margin-right: 20px;
+    #result_content {
+        margin: 40px;
+
+        display: grid;
+        grid-template-columns: repeat( 4, auto );
+        grid-gap: 40px;
+        justify-items: stretch;
+    }
+
+    #result_content img {
+        float: left;
+        margin-right: 20px;
+    }
+
 }
