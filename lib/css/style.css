@@ -8,21 +8,19 @@ body {
     border-radius: 5px;
 
     padding: 10px;
-
-    height: 100px;
-    width: 200px;
 }
 
 #top_content {
-    margin: 20px;
+    margin: 40px;
 }
 
 #result_content {
-    margin: 50px;
+    margin: 40px;
 
     display: grid;
-    grid-template-columns: repeat( 2, auto );
-    grid-gap: 20px;
+    grid-template-columns: repeat( 4, auto );
+    grid-gap: 40px;
+    justify-items: stretch;
 }
 
 #result_content img {
